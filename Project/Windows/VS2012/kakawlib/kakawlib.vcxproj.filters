@@ -1,0 +1,90 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Kakaw">
+      <UniqueIdentifier>{df6067c4-292b-40e9-a74e-90693825223f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Sys">
+      <UniqueIdentifier>{5aa71de4-f510-4d90-bf45-302fbc8d42ec}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Kakaw\Utils">
+      <UniqueIdentifier>{79f3e72d-9f31-4175-b1c5-87bf5edd59d9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Sys\Windows">
+      <UniqueIdentifier>{37c41575-829c-4c93-b8be-1698502e6cb5}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\..\..\Code\Kakaw\Application.cpp">
+      <Filter>Kakaw</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Code\Kakaw\Input.cpp">
+      <Filter>Kakaw</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Code\Kakaw\Renderer.cpp">
+      <Filter>Kakaw</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Code\Kakaw\Window.cpp">
+      <Filter>Kakaw</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Code\Sys\Windows\System.cpp">
+      <Filter>Sys\Windows</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Code\Sys\Windows\Win32.cpp">
+      <Filter>Sys\Windows</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Code\Sys\Windows\WinInput.cpp">
+      <Filter>Sys\Windows</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Code\Sys\Windows\WinMain.cpp">
+      <Filter>Sys\Windows</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Code\Sys\Windows\WinProc.cpp">
+      <Filter>Sys\Windows</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\..\..\Code\Kakaw\Application.hpp">
+      <Filter>Kakaw</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Code\Kakaw\Fwd.hpp">
+      <Filter>Kakaw</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Code\Kakaw\Input.hpp">
+      <Filter>Kakaw</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Code\Kakaw\Kakaw.hpp">
+      <Filter>Kakaw</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Code\Kakaw\Platform.hpp">
+      <Filter>Kakaw</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Code\Kakaw\Renderer.hpp">
+      <Filter>Kakaw</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Code\Kakaw\Window.hpp">
+      <Filter>Kakaw</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Code\Sys\SysPlatform.hpp">
+      <Filter>Sys</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Code\Sys\System.hpp">
+      <Filter>Sys</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Code\Sys\Windows\Win32.hpp">
+      <Filter>Sys\Windows</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Code\Sys\Windows\WinInput.hpp">
+      <Filter>Sys\Windows</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Code\Sys\Windows\WinProc.hpp">
+      <Filter>Sys\Windows</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Code\Kakaw\Utils\NonCopyable.hpp">
+      <Filter>Kakaw\Utils</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Code\Kakaw\Utils\SafeDelete.hpp">
+      <Filter>Kakaw\Utils</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

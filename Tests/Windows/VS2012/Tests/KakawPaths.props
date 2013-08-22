@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ImportGroup Label="PropertySheets" />
+  <PropertyGroup Label="UserMacros">
+    <RootDir>..\..\..\..\</RootDir>
+    <KakawDir>$(RootDir)Code\</KakawDir>
+    <IncludesDir>$(RootDir)Includes\</IncludesDir>
+  </PropertyGroup>
+  <PropertyGroup>
+    <IncludePath>$(KakawDir);$(IncludesDir);$(IncludePath)</IncludePath>
+  </PropertyGroup>
+  <ItemDefinitionGroup />
+  <ItemGroup>
+    <BuildMacro Include="RootDir">
+      <Value>$(RootDir)</Value>
+    </BuildMacro>
+    <BuildMacro Include="KakawDir">
+      <Value>$(KakawDir)</Value>
+    </BuildMacro>
+    <BuildMacro Include="IncludesDir">
+      <Value>$(IncludesDir)</Value>
+    </BuildMacro>
+  </ItemGroup>
+</Project>
