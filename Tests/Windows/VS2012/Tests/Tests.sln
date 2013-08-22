@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "kakawlib", "..\..\..\..\Project\Windows\VS2012\kakawlib\kakawlib.vcxproj", "{E733CF13-9F0B-4D94-940E-4169009A9283}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "01WindowTest", "..\01WindowTest\01WindowTest.vcxproj", "{B4D6E20A-0B98-4106-B5F6-0CF82E561A90}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{E733CF13-9F0B-4D94-940E-4169009A9283}.Debug|Win32.ActiveCfg = Debug|Win32
+		{E733CF13-9F0B-4D94-940E-4169009A9283}.Debug|Win32.Build.0 = Debug|Win32
+		{E733CF13-9F0B-4D94-940E-4169009A9283}.Release|Win32.ActiveCfg = Release|Win32
+		{E733CF13-9F0B-4D94-940E-4169009A9283}.Release|Win32.Build.0 = Release|Win32
+		{B4D6E20A-0B98-4106-B5F6-0CF82E561A90}.Debug|Win32.ActiveCfg = Debug|Win32
+		{B4D6E20A-0B98-4106-B5F6-0CF82E561A90}.Debug|Win32.Build.0 = Debug|Win32
+		{B4D6E20A-0B98-4106-B5F6-0CF82E561A90}.Release|Win32.ActiveCfg = Release|Win32
+		{B4D6E20A-0B98-4106-B5F6-0CF82E561A90}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
