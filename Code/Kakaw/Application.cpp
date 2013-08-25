@@ -2,17 +2,19 @@
 
 
 #include <Kakaw/Application.hpp>
-#include <Kakaw/Renderer.hpp>
+#include <Kakaw/Renderer/DX10Renderer.hpp>
 #include <Kakaw/Window.hpp>
 #include <Kakaw/Input.hpp>
+
+#include <Sys/Windows/Win32.hpp>
 
 
 namespace Kakaw {
 
 
 Application::Application()
-	: mWindowContext( new Window())
-	, mRenderer(new Renderer())
+	: mWindowContext(new Window())
+	, mRenderer(new DX10Renderer(Sys::Win::GetHWND(), mWindowContext->getWindowWidth(), mWindowContext->getWindowHeight(), mWindowContext->isFullscreen()))
 	, mInput(new Input())
 {
 

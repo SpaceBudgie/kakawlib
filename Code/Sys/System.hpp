@@ -37,6 +37,7 @@ void			CloseInput();
 // *** ERROR HANDLING *** //
 
 void ErrorMsg(std::wstring const msg);
+void ErrorMsg(std::string const msg);
 
 
 // Displays an error for zero check.

@@ -10,49 +10,20 @@
       <Platform>Win32</Platform>
     </ProjectConfiguration>
   </ItemGroup>
-  <ItemGroup>
-    <ClCompile Include="..\..\..\..\Code\Kakaw\Application.cpp" />
-    <ClCompile Include="..\..\..\..\Code\Kakaw\Input.cpp" />
-    <ClCompile Include="..\..\..\..\Code\Kakaw\Renderer.cpp" />
-    <ClCompile Include="..\..\..\..\Code\Kakaw\Renderer\DX10Renderer.cpp" />
-    <ClCompile Include="..\..\..\..\Code\Kakaw\Window.cpp" />
-    <ClCompile Include="..\..\..\..\Code\Sys\Windows\System.cpp" />
-    <ClCompile Include="..\..\..\..\Code\Sys\Windows\Win32.cpp" />
-    <ClCompile Include="..\..\..\..\Code\Sys\Windows\WinInput.cpp" />
-    <ClCompile Include="..\..\..\..\Code\Sys\Windows\WinMain.cpp" />
-    <ClCompile Include="..\..\..\..\Code\Sys\Windows\WinProc.cpp" />
-  </ItemGroup>
-  <ItemGroup>
-    <ClInclude Include="..\..\..\..\Code\Kakaw\Application.hpp" />
-    <ClInclude Include="..\..\..\..\Code\Kakaw\Fwd.hpp" />
-    <ClInclude Include="..\..\..\..\Code\Kakaw\Input.hpp" />
-    <ClInclude Include="..\..\..\..\Code\Kakaw\Kakaw.hpp" />
-    <ClInclude Include="..\..\..\..\Code\Kakaw\Platform.hpp" />
-    <ClInclude Include="..\..\..\..\Code\Kakaw\Renderer.hpp" />
-    <ClInclude Include="..\..\..\..\Code\Kakaw\Renderer\DX10Renderer.hpp" />
-    <ClInclude Include="..\..\..\..\Code\Kakaw\Utils\NonCopyable.hpp" />
-    <ClInclude Include="..\..\..\..\Code\Kakaw\Utils\SafeDelete.hpp" />
-    <ClInclude Include="..\..\..\..\Code\Kakaw\Window.hpp" />
-    <ClInclude Include="..\..\..\..\Code\Sys\SysPlatform.hpp" />
-    <ClInclude Include="..\..\..\..\Code\Sys\System.hpp" />
-    <ClInclude Include="..\..\..\..\Code\Sys\Windows\Win32.hpp" />
-    <ClInclude Include="..\..\..\..\Code\Sys\Windows\WinInput.hpp" />
-    <ClInclude Include="..\..\..\..\Code\Sys\Windows\WinProc.hpp" />
-  </ItemGroup>
   <PropertyGroup Label="Globals">
-    <ProjectGuid>{E733CF13-9F0B-4D94-940E-4169009A9283}</ProjectGuid>
+    <ProjectGuid>{4B3E703F-3378-4A83-9F19-94CC1B6ECB8D}</ProjectGuid>
     <Keyword>Win32Proj</Keyword>
-    <RootNamespace>kakawlib</RootNamespace>
+    <RootNamespace>My02RendererTest</RootNamespace>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
-    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <ConfigurationType>Application</ConfigurationType>
     <UseDebugLibraries>true</UseDebugLibraries>
     <PlatformToolset>v110</PlatformToolset>
     <CharacterSet>Unicode</CharacterSet>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
-    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <ConfigurationType>Application</ConfigurationType>
     <UseDebugLibraries>false</UseDebugLibraries>
     <PlatformToolset>v110</PlatformToolset>
     <WholeProgramOptimization>true</WholeProgramOptimization>
@@ -63,23 +34,28 @@
   </ImportGroup>
   <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
-    <Import Project="KakawLibProps.props" />
+    <Import Project="..\Tests\KakawTestsDebug.props" />
+    <Import Project="..\Tests\KakawPaths.props" />
   </ImportGroup>
   <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
-    <Import Project="PropertySheet.props" />
-    <Import Project="KakawLibProps.props" />
+    <Import Project="..\Tests\KakawTestsRelease.props" />
+    <Import Project="..\Tests\KakawPaths.props" />
   </ImportGroup>
   <PropertyGroup Label="UserMacros" />
-  <PropertyGroup />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <ClCompile>
       <PrecompiledHeader>
       </PrecompiledHeader>
       <WarningLevel>Level3</WarningLevel>
       <Optimization>Disabled</Optimization>
-      <PreprocessorDefinitions>WIN32;_DEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
     </ClCompile>
     <Link>
       <SubSystem>Windows</SubSystem>
@@ -94,7 +70,7 @@
       <Optimization>MaxSpeed</Optimization>
       <FunctionLevelLinking>true</FunctionLevelLinking>
       <IntrinsicFunctions>true</IntrinsicFunctions>
-      <PreprocessorDefinitions>WIN32;NDEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
     </ClCompile>
     <Link>
       <SubSystem>Windows</SubSystem>
@@ -103,6 +79,14 @@
       <OptimizeReferences>true</OptimizeReferences>
     </Link>
   </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\..\TestFiles\02Render\Main.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\..\Project\Windows\VS2012\kakawlib\kakawlib.vcxproj">
+      <Project>{e733cf13-9f0b-4d94-940e-4169009a9283}</Project>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>

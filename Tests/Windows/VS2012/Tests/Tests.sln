@@ -5,6 +5,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "kakawlib", "..\..\..\..\Pro
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "01WindowTest", "..\01WindowTest\01WindowTest.vcxproj", "{B4D6E20A-0B98-4106-B5F6-0CF82E561A90}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "02RendererTest", "..\02RendererTest\02RendererTest.vcxproj", "{4B3E703F-3378-4A83-9F19-94CC1B6ECB8D}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Win32 = Debug|Win32
@@ -19,6 +21,10 @@ Global
 		{B4D6E20A-0B98-4106-B5F6-0CF82E561A90}.Debug|Win32.Build.0 = Debug|Win32
 		{B4D6E20A-0B98-4106-B5F6-0CF82E561A90}.Release|Win32.ActiveCfg = Release|Win32
 		{B4D6E20A-0B98-4106-B5F6-0CF82E561A90}.Release|Win32.Build.0 = Release|Win32
+		{4B3E703F-3378-4A83-9F19-94CC1B6ECB8D}.Debug|Win32.ActiveCfg = Debug|Win32
+		{4B3E703F-3378-4A83-9F19-94CC1B6ECB8D}.Debug|Win32.Build.0 = Debug|Win32
+		{4B3E703F-3378-4A83-9F19-94CC1B6ECB8D}.Release|Win32.ActiveCfg = Release|Win32
+		{4B3E703F-3378-4A83-9F19-94CC1B6ECB8D}.Release|Win32.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
