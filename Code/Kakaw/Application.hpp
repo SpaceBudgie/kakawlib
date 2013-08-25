@@ -12,26 +12,26 @@ namespace Kakaw {
 class Application : private NonCopyable
 {
 
-	std::unique_ptr<Renderer>	mRenderer;
 	std::unique_ptr<Window>		mWindowContext;
+	std::unique_ptr<Renderer>	mRenderer;
 	std::unique_ptr<Input>		mInput;	
 
 public:
 
 
-	explicit 			Application();
-	virtual 			~Application();
+	explicit 					Application();
+	virtual 					~Application();
 
 
 	// Application start and end frame
-	void				startFrame();
-	void				endFrame();
+	void						startFrame();
+	void						endFrame();
 
 
 	// Application components.
-	Window&				getWindow() const;
-	Input *				getInput() const;
-	Renderer *			getRenderer() const;
+	Window&						getWindow() const;
+	Input *						getInput() const;
+	Renderer *					getRenderer() const;
 
 }; // class
 

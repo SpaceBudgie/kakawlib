@@ -192,5 +192,11 @@ void ErrorMsg(std::wstring const msg) {
 	::MessageBox(0, msg.c_str(), L"Error", MB_OK);
 }
 
+void ErrorMsg(std::string const msg) {
+	std::wstring errMsg;
+	errMsg.assign(msg.begin(), msg.end());
+	ErrorMsg(errMsg);
+}
+
 
 } // namespace
