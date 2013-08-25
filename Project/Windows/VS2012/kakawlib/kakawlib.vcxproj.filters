@@ -13,6 +13,9 @@
     <Filter Include="Sys\Windows">
       <UniqueIdentifier>{37c41575-829c-4c93-b8be-1698502e6cb5}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Kakaw\Renderer">
+      <UniqueIdentifier>{c058ce5a-ca3b-4ea6-bdde-9d947e419804}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="..\..\..\..\Code\Kakaw\Application.cpp">
@@ -41,6 +44,9 @@
     </ClCompile>
     <ClCompile Include="..\..\..\..\Code\Sys\Windows\WinProc.cpp">
       <Filter>Sys\Windows</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Code\Kakaw\Renderer\DX10Renderer.cpp">
+      <Filter>Kakaw\Renderer</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -85,6 +91,9 @@
     </ClInclude>
     <ClInclude Include="..\..\..\..\Code\Kakaw\Utils\SafeDelete.hpp">
       <Filter>Kakaw\Utils</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Code\Kakaw\Renderer\DX10Renderer.hpp">
+      <Filter>Kakaw\Renderer</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>
